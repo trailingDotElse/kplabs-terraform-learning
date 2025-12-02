@@ -1,3 +1,13 @@
+terraform {
+  required_providers {
+    mycloud = {
+      source  = "hashicorp/aws"
+      
+    }
+  }
+}
+
+
 resource "aws-instance" "myec2" {
   region = "us-east-1"
   ami = "ami-052064a798f08f0d3"
